@@ -43,5 +43,13 @@
 			"    $0"
 		],
 		"description": ""
-	}
+	},
+	"Walk": {
+		"prefix": "walk",
+		"body": [
+			"for root, dirs, files in os.walk(path):",
+			"    ${1}"
+		],
+		"description": "µÝ¹é±éÀúÎÄ¼þ"
+	},
 }
