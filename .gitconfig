@@ -1,0 +1,34 @@
+[user]
+	name = tangshizhong
+	email = tangsz@maxictech.com
+[alias]
+	gcfg = config --global
+	co = checkout
+	cl = clone
+	cp = cherry-pick
+	br = branch
+	st = status
+	del = branch -D
+	a = add .
+	cm = commit
+	fix = commit --amend
+	dft = difftool --no-prompt
+	df = diff
+	ldf = diff HEAD HEAD^
+	cob = checkout -b
+	sts = status
+[diff]
+	tool = bc4
+[difftool]
+	promt = false
+[difftool "bc4"]
+	cmd = \"C:\\Program Files\\Beyond Compare 4\\BComp.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = bc4
+[mergetool]
+	promt = false
+[mergetool "bc4"]
+	cmd = "\"C:\\Program Files\\Beyond Compare 4\\BComp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[core]
+	editor = \"C:\\Program Files (x86)\\Notepad++\\notepad++.exe\"
+
