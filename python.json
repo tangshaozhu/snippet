@@ -19,5 +19,29 @@
 			"    $0"
 		],
 		"description": "Insert If-Main Code"
+	},
+	"Function": {
+		"prefix": "def func",
+		"body": [
+			"def ${1:func}($2):",
+			"    $0"
+		],
+		"description": "Define a function"
+	},
+	"Method": {
+		"prefix": "def method",
+		"body": [
+			"def ${1:method}(self$2):",
+			"    $0"
+		],
+		"description": "Define a method"
+	},
+	"File-Open-as": {
+		"prefix": "with open",
+		"body": [
+			"with open(${1:file}, '${2:r}') as ${3:f}:",
+			"    $0"
+		],
+		"description": ""
 	}
 }
