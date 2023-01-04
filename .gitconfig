@@ -5,6 +5,7 @@
 	gcfg = config --global
 	co = checkout
 	cl = clone
+	pushrmt = push --set-upstream origin
 	cp = cherry-pick
 	br = branch
 	st = status
@@ -12,7 +13,8 @@
 	a = add .
 	cm = commit
 	fix = commit --amend
-	dft = difftool --no-prompt
+	dft = difftool -d
+	ldft = difftool -d HEAD HEAD^
 	df = diff
 	ldf = diff HEAD HEAD^
 	cob = checkout -b
