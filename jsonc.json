@@ -24,5 +24,12 @@
             "}"
         ],
         "description": "Add new snippet"
+    },
+    "TestCase": {
+        "prefix": "test case",
+        "body": [
+            ""
+        ],
+        "description": "测试用例模板"
     }
 }

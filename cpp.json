@@ -12,8 +12,8 @@
     // 	],
     // 	"description": "Log output to console"
     // }
-    "Function": {
-        "prefix": "func",
+    "Function Header": {
+        "prefix": "fc",
         "body": [
             "/***************************************************",
             " * function: $2",
@@ -29,18 +29,46 @@
         ],
         "description": ""
     },
-    "Function Comment": {
-        "prefix": "fc",
+    "Header File Template Cpp": {
+        "prefix": "hd",
         "body": [
-            "/***************************************************",
-            " * function: ",
-            " * author: tangsz",
-            " * input parameters: ",
-            " * return value: ",
-            " * description: ",
-            " **************************************************/",
+            "/* Copyright (c) Maxic Technology Inc. $CURRENT_YEAR. All rights reserved.",
+            " ******************************************************************************",
+            " * @file    ${TM_FILENAME}",
+            " * @author  Maxic Firmware Team",
+            " * @version V1.0.0",
+            " * @date    ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+            " * @brief   This file provides all the ${1} firmware functions.",
+            " ******************************************************************************",
+            " * @attention",
+            " ******************************************************************************",
+            " **/",
+            "",
+            "/* Define to prevent recursive inclusion -------------------------------------*/",
+            "#ifndef __${TM_FILENAME_BASE/([A-Za-z0-9]+)([^A-Za-z0-9]*)/${1:/upcase}${2:+_}/g}_H__",
+            "#define __${TM_FILENAME_BASE/([A-Za-z0-9]+)([^A-Za-z0-9]*)/${1:/upcase}${2:+_}/g}_H__",
+            "",
+            "/* Includes ------------------------------------------------------------------*/",
+            "",
+            "/* Exported defines ----------------------------------------------------------*/",
+            "",
+            "/* Exported typedefs ---------------------------------------------------------*/",
+            "",
+            "/* Exported constants --------------------------------------------------------*/",
+            "",
+            "/* Exported macros -----------------------------------------------------------*/",
+            "",
+            "/* Exported variables --------------------------------------------------------*/",
+            "",
+            "/* Exported functions --------------------------------------------------------*/",
+            "",
+            "",
+            "#endif /* __${TM_FILENAME_BASE/([A-Za-z0-9]+)([^A-Za-z0-9]*)/${1:/upcase}${2:+_}/g}_H__ */",
+            "",
+            "/* end of file */",
+            ""
         ],
-        "description": ""
+        "description": "头文件模板"
     },
     "Header File Template": {
         "prefix": "hd",
@@ -142,22 +170,6 @@
             "}",
             "/* end of file */",
             ""
-        ],
-        "description": ""
-    },
-    "IfDef": {
-        "prefix": "#ifdef",
-        "body": [
-            "#ifdef $1",
-            "$0",
-            "#endif"
-        ],
-        "description": ""
-    },
-    "PreCompile-Else": {
-        "prefix": "#else",
-        "body": [
-            "#else"
         ],
         "description": ""
     }

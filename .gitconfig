@@ -5,7 +5,6 @@
 	gcfg = config --global
 	co = checkout
 	cl = clone
-	pushrmt = push --set-upstream origin
 	cp = cherry-pick
 	br = branch
 	st = status
@@ -14,11 +13,19 @@
 	cm = commit
 	fix = commit --amend
 	dft = difftool -d
-	ldft = difftool -d HEAD HEAD^
 	df = diff
-	ldf = diff HEAD HEAD^
+	ldf = diff HEAD^ HEAD
 	cob = checkout -b
 	sts = status
+	ldft = dft HEAD^ HEAD
+	pushrmt = push --set-upstream origin
+	rebdev = "!f() { git fetch origin develop:develop; git rebase origin/develop;}; f"
+	pushf = push -f
+	codev = checkout develop
+	fo = fetch origin
+	cobj = "!f() { git checkout -b personal/tangsz/jira$1;}; f"
+	reborg = "!f() { git fetch origin; git rebase origin/$1;}; f"
+	cobp = "!f() { git checkout -b personal/tangsz/$1;}; f"
 [diff]
 	tool = bc4
 [difftool]
