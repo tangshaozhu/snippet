@@ -1,6 +1,5 @@
 [user]
 	name = tangshizhong
-	email = tangsz@maxictech.com
 [alias]
 	gcfg = config --global
 	co = checkout
