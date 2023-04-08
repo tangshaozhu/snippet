@@ -45,7 +45,7 @@
     "Header File Template": {
         "prefix": "hd",
         "body": [
-            "/* Copyright (c) Maxic Technology Inc. $CURRENT_YEAR. All rights reserved.",
+            "/* Copyright (c) xxxxx Technology Inc. $CURRENT_YEAR. All rights reserved.",
             " ******************************************************************************",
             " * @file    ${TM_FILENAME}",
             " * @author  Maxic Firmware Team",
