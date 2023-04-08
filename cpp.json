@@ -32,10 +32,10 @@
     "Header File Template Cpp": {
         "prefix": "hd",
         "body": [
-            "/* Copyright (c) xxxxx Technology Inc. $CURRENT_YEAR. All rights reserved.",
+            "/* Copyright (c) $2 Technology Inc. $CURRENT_YEAR. All rights reserved.",
             " ******************************************************************************",
             " * @file    ${TM_FILENAME}",
-            " * @author  Maxic Firmware Team",
+            " * @author  $2 Firmware Team",
             " * @version V1.0.0",
             " * @date    ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
             " * @brief   This file provides all the ${1} firmware functions.",
@@ -73,10 +73,10 @@
     "Header File Template": {
         "prefix": "hd",
         "body": [
-            "/* Copyright (c) Maxic Technology Inc. $CURRENT_YEAR. All rights reserved.",
+            "/* Copyright (c) $1 Technology Inc. $CURRENT_YEAR. All rights reserved.",
             " ******************************************************************************",
             " * @file    ${TM_FILENAME}",
-            " * @author  Maxic Firmware Team",
+            " * @author  $1 Firmware Team",
             " * @version V1.0.0",
             " * @date    ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
             " * @brief   This file provides all the ${1} firmware functions.",
@@ -123,10 +123,10 @@
     "Source File Template": {
         "prefix": "sc",
         "body": [
-            "/* Copyright (c) Maxic Technology Inc. $CURRENT_YEAR. All rights reserved.",
+            "/* Copyright (c) $1 Technology Inc. $CURRENT_YEAR. All rights reserved.",
             " ******************************************************************************",
             " * @file    ${TM_FILENAME}",
-            " * @author  Maxic Firmware Team",
+            " * @author  $1 Firmware Team",
             " * @version V1.0.0",
             " * @date    ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
             " * @brief   This file provides all the ${1} firmware functions.",
